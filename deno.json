@@ -1,0 +1,12 @@
+{
+  "name": "deno-boilerplate",
+  "description": "Template generic",
+  "author": "KayoRonald",
+  "version":"1.0",
+  "main": "app/server.ts",
+  "allow": [
+    "net",
+    "read",
+    "write"
+  ]
+}
