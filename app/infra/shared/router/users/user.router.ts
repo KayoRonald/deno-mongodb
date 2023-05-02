@@ -6,9 +6,9 @@ const router = new Router();
 
 router
   .get<string>('/', controller.findAlCtl)
-  .get<string>('/:id', controller.findByIdCtl)
+  .get<string>('/:userId', controller.findByIdCtl)
   .post<string>('/', validate(createSchema), controller.createCtl)
-  .put<string>('/:id', validate(getIdSchema), controller.updateCtl)
-  .delete<string>('/:id', controller.deleteCtl)
+  .put<string>('/:userId', validate(getIdSchema), controller.updateCtl)
+  .delete<string>('/:userId', controller.deleteCtl)
 
 export default router;
